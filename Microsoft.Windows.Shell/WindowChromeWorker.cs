@@ -509,7 +509,7 @@ namespace Microsoft.Windows.Shell
             }
 
             handled = true;
-            return new IntPtr((int)WVR.REDRAW);
+            return new IntPtr((int)WVR.REDRAW | (int)WVR.VALIDRECTS);
         }
 
         private HT _GetHTFromResizeGripDirection(ResizeGripDirection direction)
